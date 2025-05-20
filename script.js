@@ -6,23 +6,24 @@ let todos = [
   { title: "Deploy the password vault to the bunker", done: true }
 ];
 
-
 let doneTodos = [];
 let onGoingTodos = [];
 
 todos.forEach(todo => {
   if (todo.done) {
-    doneTodos.push(todo);      
+    doneTodos.push(todo);     
   } else {
     onGoingTodos.push(todo);   
   }
 });
-console.log("✅ Done todos:");
+
+console.log("✅ Mission Accomplished (Done Todos):");
 doneTodos.forEach(todo => {
-  console.log(`- ${todo.title}`);
+  console.log(`=> ${todo.title}`);
 });
 
-console.log("\n🚧 OnGoing todos:");
+
+console.log("\n🚧 Still in the Lab (Ongoing Todos):");
 onGoingTodos.forEach(todo => {
-  console.log(`- ${todo.title}`);
+  console.log(`=> ${todo.title}`);
 });
